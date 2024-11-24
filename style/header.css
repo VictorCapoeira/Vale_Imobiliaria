@@ -1,0 +1,62 @@
+.hero{
+    display: flex; 
+    /* Alinhando itens lado a lado */
+    background-color: #ffffffe3;
+    /* Definindo cor de fundo */
+    align-items: center;
+    /* Distribuindo espaço na vertical */
+    justify-content: space-between;
+    /* Distribuindo espaço entre os flex-itens */
+    padding: 3rem 5rem;
+    /* Adicionando espaço interno */
+}
+.hero_nav_list{
+    list-style: none;
+    /* Retirando os bulltes da lista */
+    display: flex;
+    /* Alinhando itens lado a lado */
+    gap: 1rem;
+    /* Adicionando espaço entre os flex-itens */
+    align-items: center;
+    /* Alinhando itens na do centro do elemento */
+}
+.hero_nav_list_item_link{
+    text-decoration: none;
+    /* Retirando underline */
+    font-size: 2rem;
+    /* Definindo tamanho da fonte */
+    color: #2f9be7;
+    /* Definindo cor */   
+    padding: 1rem 3rem;
+    /* Definindo espaço interno */
+    border: 1px solid #01365c23;
+    border-radius: 50px;
+    
+}
+.hero_nav_list_item_link:hover{
+    color: #01365c;
+    /* Definindo cor */
+    background-color: #64a8da;
+    /* Definindo cor de fundo */
+    border-radius: 50px;
+    /* Arredondando bordas */
+}
+.person_def{
+    color: #2f9be7;
+    /* Adicionando cor */
+    font-size: 3rem;
+    /* Ajustando tamanho da fonte */
+}
+.btn_header_login:hover .bi-person{
+    display: none;
+    /* Desabilitando display */
+} 
+.bi-person-fill{
+    display: none;
+    /* Desabilitando display */
+}
+.btn_header_login:hover .bi-person-fill{
+    display: block;
+    /* Habilitando display */
+}
+
