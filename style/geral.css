@@ -10,3 +10,97 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: rgb(63, 167, 243, .4);
 }
+.main_content{
+    padding: 0 2rem; 
+}
+.main_content_1_form{
+    padding: 2rem;
+    background-color: aliceblue;
+    margin-top: 1rem;
+    width: 500px;
+    border-radius: 50px;
+}
+.main_content_1_form_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+.main_content_1_form_content_title{
+    text-align: center;
+    color: #0987e1;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+.main_content_1_form_content_switch .teste{
+    display: flex;
+    /* gap: 1rem; */
+    height: 5rem;
+    width: 21rem;
+    font-size: 2rem;
+    background-color: #0987e13a;
+    border-radius: 20px;
+    /* padding: 1rem; */
+    cursor: pointer;
+}
+.main_content_1_form_content_switch .teste span{
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    position: relative;
+}
+.main_content_1_form_content_switch  input{
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 25px;
+    outline: none;
+}
+.main_content_1_form_content_switch .teste .alu{
+    background-color: #0987e1;
+    color: white;
+    transition: background-color .5s;
+}
+.main_content_1_form_content_switch input:checked + .teste .alu{
+    background-color: transparent;
+    color: black;
+}
+.main_content_1_form_content_switch input:checked + .teste .com{
+    background-color: #0987e1;
+    color: white;
+}
+.main_content_1_form_content_def{
+    display: flex;
+    flex-direction: column;
+}
+.main_content_1_form_content_def label{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+}
+.main_content_1_form_content_def input{
+    border-color: rgba(0, 0, 0, 0.122);
+    font-size: 2rem;
+    outline: none;
+}
+.main_content_1_form_content_def select{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.379);
+}
+.btn_imoveis{
+    border-radius: 50px;
+    font-size: 2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: white;
+    background-color: #0987e1;
+}
+.btn_imoveis:hover{
+    background-color: #025693;
+}

@@ -133,3 +133,6 @@
     opacity: .5;
     /* Definindo opacidade */
 }
+.modal-footer{
+    border: none;
+}

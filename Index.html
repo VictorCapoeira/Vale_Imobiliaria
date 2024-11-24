@@ -60,6 +60,62 @@
             </nav>
         </header>
     </div>
+    <div class="wapprer">
+        <main class="main_content">
+            <section class="main_content_1">
+                <form action="get" class="main_content_1_form">
+                    <fieldset class="main_content_1_form_content">
+                        <legend class="main_content_1_form_content_title">
+                            Encontre o imóvel ideal para você, com quem entende do mercado.
+                        </legend>
+                        <div class="main_content_1_form_content_switch">
+                            <label>
+                                <input type="checkbox">
+                                <span class="teste"><span class="alu">Alugar   </span><span class="com">   Comprar</span></span>
+                            </label>
+                        </div>
+                        <div class="main_content_1_form_content_cidade main_content_1_form_content_def">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="main_content_1_form_content_bairro main_content_1_form_content_def">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro">
+                        </div>
+                        <div class="main_content_1_form_content_valor main_content_1_form_content_def">
+                            <label for="valor">Valor até</label>
+                            <select class="form-select form-select-sm" aria-label="valor">
+                                <option selected class="first_sel">Escolha o valor</option>
+                                <option value="1">R$1000</option>
+                                <option value="2">$5000</option>
+                                <option value="3">$10000</option>
+                                <option value="4">$20000</option>
+                                <option value="5">$50000</option>
+                                <option value="6">$10000</option>
+                                <option value="7">$250000</option>
+                                <option value="8">$500000</option>
+                                <option value="9">$1000000</option>
+                              </select>
+                        </div>
+                        <div class="main_content_1_form_content_quartos main_content_1_form_content_def">
+                            <label for="quartos">Quartos</label>
+                            <select class="form-select form-select-sm" aria-label="quartos">
+                                <option selected class="first_sel">N° de quartos</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">+4</option>
+                              </select>
+                        </div>
+                        <div class="main_content_1_form_content_action">
+                            <button type="submit" class="btn_imoveis">Buscar imóveis</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
