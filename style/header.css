@@ -9,6 +9,8 @@
     /* Distribuindo espaço entre os flex-itens */
     padding: 3rem 5rem;
     /* Adicionando espaço interno */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.164);
+    /* Adicionando sombra*/
 }
 .hero_nav_list{
     list-style: none;
@@ -34,7 +36,7 @@
     
 }
 .hero_nav_list_item_link:hover{
-    color: #01365c;
+    color: #ffffff;
     /* Definindo cor */
     background-color: #64a8da;
     /* Definindo cor de fundo */
@@ -59,4 +61,75 @@
     display: block;
     /* Habilitando display */
 }
+.form_def{
+    background-color: #64a9da91;
+    /* Definindo cor de fundo */
+    color: white;
+    /* Definindo cor */
 
+}
+.modal-title{
+    font-size: 3rem;
+    /* Definindo tamanho da onte */
+    color: rgb(255, 255, 255);
+    /* Definindo cor */
+}
+.modal-body, .email_setor, .senha_setor{
+    display: flex;
+    /* Alterando display para que os itens fiquem lado a lado */
+    flex-direction: column;
+    /* Alterando a direção do flex, para que o itens fiquem alinhando em coluna */
+    gap: 1rem;
+    /* Adicionando espaço entre os elementos */
+}
+
+.modal-body label{
+    font-size: 2rem;
+    /* Definindo tamanho da fonte */
+}
+.modal-body input{
+    font-size: 2rem;
+    /* Definindo tamanho da onte */
+    background-color: transparent;
+    /* Definindo cor de fundo */
+    border: none;
+    /* Retirando bordas  */
+    outline: none;
+    /* Retirando outline */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.651);
+    /* Criando borda na parte de baixo */
+}
+.modal-body input:focus{
+    background-color: rgba(255, 255, 255, 0.233);
+    /* Definindo cor de fundo */
+    padding-left: .5rem;
+    /* Aplicando espaçamento interno na esquerda  */
+    transition: padding-left .3s;
+    /* Definindo transição da espaço interno na esquerda  */
+}
+.modal-body input:focus:valid{
+    border-bottom-color: #06af14;
+    /* Definindo cor de borda */
+}
+.modal-body input:focus:invalid{
+    border-bottom-color: #c00505 ;
+    /* Definindo cor de borda */
+}
+.form_actions .btn{
+    font-size: 1.7rem;
+    /* Definindo tamanho de fonte */
+    background-color: #2f9be7;
+    /* Definindo cor de fundo */
+}
+.form_actions a{
+    text-decoration: none;
+    /* retirando underline */
+    background-color: inherit;
+    /* Definindo cor de fundo */
+    color: white;
+    /* definindo cor de fonte */
+}
+.form_actions .btn-secondary{
+    opacity: .5;
+    /* Definindo opacidade */
+}
