@@ -62,57 +62,96 @@
     </div>
     <div class="wapprer">
         <main class="main_content">
-            <section class="main_content_1">
-                <form action="get" class="main_content_1_form">
-                    <fieldset class="main_content_1_form_content">
-                        <legend class="main_content_1_form_content_title">
-                            Encontre o imóvel ideal para você, com quem entende do mercado.
-                        </legend>
-                        <div class="main_content_1_form_content_switch">
-                            <label>
-                                <input type="checkbox">
-                                <span class="teste"><span class="alu">Alugar   </span><span class="com">   Comprar</span></span>
-                            </label>
-                        </div>
-                        <div class="main_content_1_form_content_cidade main_content_1_form_content_def">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" id="cidade" name="cidade">
-                        </div>
-                        <div class="main_content_1_form_content_bairro main_content_1_form_content_def">
-                            <label for="bairro">Bairro</label>
-                            <input type="text" id="bairro" name="bairro">
-                        </div>
-                        <div class="main_content_1_form_content_valor main_content_1_form_content_def">
-                            <label for="valor">Valor até</label>
-                            <select class="form-select form-select-sm" aria-label="valor">
-                                <option selected class="first_sel">Escolha o valor</option>
-                                <option value="1">R$1000</option>
-                                <option value="2">$5000</option>
-                                <option value="3">$10000</option>
-                                <option value="4">$20000</option>
-                                <option value="5">$50000</option>
-                                <option value="6">$10000</option>
-                                <option value="7">$250000</option>
-                                <option value="8">$500000</option>
-                                <option value="9">$1000000</option>
-                              </select>
-                        </div>
-                        <div class="main_content_1_form_content_quartos main_content_1_form_content_def">
-                            <label for="quartos">Quartos</label>
-                            <select class="form-select form-select-sm" aria-label="quartos">
-                                <option selected class="first_sel">N° de quartos</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">+4</option>
-                              </select>
-                        </div>
-                        <div class="main_content_1_form_content_action">
-                            <button type="submit" class="btn_imoveis">Buscar imóveis</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+            <div class="main_content_header">
+                <section class="main_content_1">
+                    <form action="get" class="main_content_1_form">
+                        <fieldset class="main_content_1_form_content">
+                            <legend class="main_content_1_form_content_title">
+                                Encontre o imóvel ideal para você, com quem entende do mercado.
+                            </legend>
+                            <div class="main_content_1_form_content_switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="teste"><span class="alu">Alugar   </span><span class="com">   Comprar</span></span>
+                                </label>
+                            </div>
+                            <div class="main_content_1_form_content_cidade main_content_1_form_content_def">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" name="cidade">
+                            </div>
+                            <div class="main_content_1_form_content_bairro main_content_1_form_content_def">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro" name="bairro">
+                            </div>
+                            <div class="main_content_1_form_content_valor main_content_1_form_content_def">
+                                <label for="valor">Valor até</label>
+                                <select class="form-select form-select-sm" aria-label="valor">
+                                    <option selected class="first_sel">Escolha o valor</option>
+                                    <option value="1">R$1000</option>
+                                    <option value="2">$5000</option>
+                                    <option value="3">$10000</option>
+                                    <option value="4">$20000</option>
+                                    <option value="5">$50000</option>
+                                    <option value="6">$10000</option>
+                                    <option value="7">$250000</option>
+                                    <option value="8">$500000</option>
+                                    <option value="9">$1000000</option>
+                                </select>
+                            </div>
+                            <div class="main_content_1_form_content_quartos main_content_1_form_content_def">
+                                <label for="quartos">Quartos</label>
+                                <select class="form-select form-select-sm" aria-label="quartos">
+                                    <option selected class="first_sel">N° de quartos</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">+4</option>
+                                </select>
+                            </div>
+                            <div class="main_content_1_form_content_action">
+                                <button type="submit" class="btn_imoveis">Buscar imóveis</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="main_content_2">
+                    <h2 class="main_content_2_title">Imoveis com descontos!</h2>
+                    <div class="main_content_2_cards">
+                        <article class="main_content_2_cards_card">
+                            <div class="main_content_2_cards_card_img">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://meuimobiliario.com/wp-content/uploads/2023/03/Casa-de-116-m-do-Casas-Reali-Villa-Imperial-Teresina-PI-800x666.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://meuimobiliario.com/wp-content/uploads/2023/03/Planta-da-casa-de-116-m-do-Casas-Reali-Villa-Imperial-Teresina-PI-800x329.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                            <div class="main_content_2_cards_card_description">
+                                <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                                <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                            </div>
+                            <div class="main_content_2_cards_card_itens">
+                                
+                            </div>
+                            <div class="main_content_2_cards_card_value">
+
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
     
