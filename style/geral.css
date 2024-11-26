@@ -8,25 +8,33 @@ body{
     min-width: 100vw;
     width: 100vw;
     font-family: "Roboto", sans-serif;
-    background-color: rgb(63, 167, 243, .4);
+    background-color: #3fa7f366;
+    background-image: url(../imagens/Vale_Imobiliaria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 .main_content_header{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* width: 80%; */
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr); */
     margin-top: 3rem;
     gap: 3rem;
+    
 }
 .main_content_1_form{
     /* background-color: rgb(144, 82, 6); */
 }
 .main_content_1{
     padding-left: 3rem;
-    grid-column: 0 / 4;
+    /* grid-column: 0 / 4; */
+    
 }
+
 .main_content_1_form{
     padding: 2rem;
     background-color: aliceblue;
@@ -120,7 +128,7 @@ body{
     background-color: #025693;
 }
 .main_content_2{
-    grid-column: 2 / 13;
+    /* grid-column: 2 / 13; */
 }
 .main_content_2_title{
     text-align: center;
@@ -184,4 +192,26 @@ body{
 .main_content_2_cards_card_value_price::before{
     content: "R$ ";
 
+}
+.main_content_2{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.main_content_3 img{
+    /* width: 100%;
+     */
+    
+    text-align: center;
+}
+.main_content_1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* gap: 3rem; */
+    position: relative;
 }
