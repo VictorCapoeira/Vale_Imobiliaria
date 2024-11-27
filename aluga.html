@@ -14,7 +14,7 @@
     <div class="wapprer">
         <header class="hero">
             <div class="hero_content_title">
-                <h1 class="hero_title title">XXXXXXXXXXX</h1>
+                <h1 class="hero_title title"><img src="imagens/tras.png" alt=""></h1>
             </div>
             <nav class="hero_nav">
                 <ul class="hero_nav_list">
@@ -68,232 +68,199 @@
                     <label for="mapa_busca"><i class="fa-regular fa-map"></i></label>
                     <input type="text" id="mapa_busca" name="mapa_busca" placeholder="Cidade, bairro, Rua ...">
                 </div>
-                <button class="btn-left" onclick="scrollMenu(-200)">&#9664;</button>
-                <div class="menu">
-                  <div class="menu-item">
-                    <select class="form-select form-select-sm" aria-label="valor">
-                        <option selected class="first_sel">Escolha a modalidade</option>
-                        <option value="1">Alugel</option>
-                        <option value="2">Compra</option>
-                    </select>
-                  </div>
-                  <div class="menu-item">
-                    <select class="form-select form-select-sm" aria-label="valor">
-                        <option selected class="first_sel">Escolha a categoria</option>
-                        <option value="1">Residencial</option>
-                        <option value="2">Comercial</option>
-                    </select>
-                  </div>
-                  <div class="menu-item">
-                    <div class="range-container">
-                        <label for="roomRange">Quartos: </label>
-                        <div class="range-controls">
-                          <input 
-                            type="range" 
-                            id="roomRange" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)" 
-                            onchange="updateValues(this.value)">
-                          
-                          <!-- Input numérico -->
-                          <input 
-                            type="number" 
-                            id="rangeInput" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)">
-                          
-                          <!-- Exibição do valor -->
-                          <span id="rangeValue">0</span>
+                <div class="filtros">
+                  <button class="btn-left" onclick="scrollMenu(-200)">&#9664;</button>
+                  <div class="menu">
+                    <div class="menu-item">
+                      <select class="form-select form-select-sm" aria-label="valor">
+                          <option selected class="first_sel">Escolha a modalidade</option>
+                          <option value="1">Alugel</option>
+                          <option value="2">Compra</option>
+                      </select>
+                    </div>
+                    <div class="menu-item">
+                      <select class="form-select form-select-sm" aria-label="valor">
+                          <option selected class="first_sel">Escolha a categoria</option>
+                          <option value="1">Residencial</option>
+                          <option value="2">Comercial</option>
+                      </select>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de quartos: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="range-container">
-                        <label for="roomRange">Valor minimo: </label>
-                        <div class="range-controls">
-                          <input 
-                            type="range" 
-                            id="roomRange" 
-                            min="0" 
-                            max="1000000" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)" 
-                            onchange="updateValues(this.value)">
-                          
-                          <!-- Input numérico -->
-                          <input 
-                            type="number" 
-                            id="rangeInput" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)">
-                          
-                          <!-- Exibição do valor -->
-                          <span id="rangeValue">0</span>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Valor minimo: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="range-container">
-                        <label for="roomRange">Valor maximo: </label>
-                        <div class="range-controls">
-                          <input 
-                            type="range" 
-                            id="roomRange" 
-                            min="0" 
-                            max="1000000" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)" 
-                            onchange="updateValues(this.value)">
-                          
-                          <!-- Input numérico -->
-                          <input 
-                            type="number" 
-                            id="rangeInput" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)">
-                          
-                          <!-- Exibição do valor -->
-                          <span id="rangeValue">0</span>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Valor maximo: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="range-container">
-                        <label for="roomRange">Vagas na garagem: </label>
-                        <div class="range-controls">
-                          <input 
-                            type="range" 
-                            id="roomRange" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)" 
-                            onchange="updateValues(this.value)">
-                          
-                          <!-- Input numérico -->
-                          <input 
-                            type="number" 
-                            id="rangeInput" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)">
-                          
-                          <!-- Exibição do valor -->
-                          <span id="rangeValue">0</span>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Vagas na garagem: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="range-container">
-                        <label for="roomRange">Banheiros: </label>
-                        <div class="range-controls">
-                          <input 
-                            type="range" 
-                            id="roomRange" 
-                            min="0" 
-                            max="1000000" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)" 
-                            onchange="updateValues(this.value)">
-                          
-                          <!-- Input numérico -->
-                          <input 
-                            type="number" 
-                            id="rangeInput" 
-                            min="0" 
-                            max="100" 
-                            step="1" 
-                            value="0" 
-                            oninput="updateValues(this.value)">
-                          
-                          <!-- Exibição do valor -->
-                          <span id="rangeValue">0</span>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de banheiros: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de banheiros: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <span id="rangeValue">0</span>
+                          </div>
+                        </div>
+                    </div>
                   </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                  <div class="menu-item">
-
-                  </div>
-                </div>
-                <button class="btn-right" onclick="scrollMenu(200)">&#9654;</button>
+                  <button class="btn-right" onclick="scrollMenu(200)">&#9654;</button>
               </div>
         </main>
     </div>

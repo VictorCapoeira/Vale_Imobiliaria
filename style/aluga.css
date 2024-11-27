@@ -123,3 +123,52 @@
     color: #007bff;
     margin-left: 10px;
   }
+  .menu-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_search{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 1rem;
+  background-color: #2365ab2b;
+  padding: 1rem;
+  border-radius: 10px;
+  /* margin-left:15rem; */
+}
+.menu_search label i{
+  font-size: 3rem;
+  opacity: .8;
+}
+.menu_search input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  
+}
+.filtros{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.menu-item{
+  background-color: #2365ab2b;
+  width: 150px;
+  max-height: 70px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.form-select{
+  font-size: 1.2rem;
+}
