@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vale Imobiliaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/aluga.css">
+</head>
+<body>
+    <div class="wapprer">
+        <header class="hero">
+            <div class="hero_content_title">
+                <h1 class="hero_title title"><img src="imagens/tras.png" alt=""></h1>
+            </div>
+            <nav class="hero_nav">
+                <ul class="hero_nav_list">
+                    <li class="hero_nav_list_item"><a href="#" class="hero_nav_list_item_link link_def">Alugar</a></li>
+                    <li class="hero_nav_list_item"><a href="#" class="hero_nav_list_item_link link_def">Comprar</a></li>
+                    <li class="hero_nav_list_item"><a href="#" class="hero_nav_list_item_link link_def">Anuciar</a></li>
+                    <li class="hero_nav_list_item"><a href="#" class="hero_nav_list_item_link link_def">Suporte</a></li>
+                    <li class="hero_nav_list_item"><div class="user_login">
+                        <button type="button" class="btn  btn_custom btn_header_login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-person person_def"></i>
+                            <i class="bi bi-person-fill person_def"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form class="form_def" method="get">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title f" id="exampleModalLabel">Faça login</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="email_setor">
+                                            <label for="email">Email: </label> 
+                                            <input type="email" name="email" id="email" required checked>
+                                        </div>
+                                        <div class="senha_setor">
+                                            <label for="senha">Senha: </label> 
+                                            <input type="password" name="senha" id="senha" required checked>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="form_actions">
+                                            <button class="btn btn-secondary" data-bs-dismiss="modal"><a href="#">Criar conta</a></button>
+                                            <button type="submit" class="btn btn-primary">Entrar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div> 
+    <div class="wapprer">
+        <main class="main_content_def main_content_aluga">
+            <div class="menu-container">
+                <div class="menu_search">
+                    <label for="mapa_busca"><i class="fa-regular fa-map"></i></label>
+                    <input type="text" id="mapa_busca" name="mapa_busca" placeholder="Cidade, bairro, Rua ...">
+                </div>
+                <div class="filtros">
+                  <button class="btn-left" onclick="scrollMenu(-200)">&#9664;</button>
+                  <div class="menu">
+                    <div class="menu-item">
+                      <select class="form-select form-select-sm" aria-label="valor">
+                          <option selected class="first_sel">Escolha a modalidade</option>
+                          <option value="1">Alugel</option>
+                          <option value="2">Compra</option>
+                      </select>
+                    </div>
+                    <div class="menu-item">
+                      <select class="form-select form-select-sm" aria-label="valor">
+                          <option selected class="first_sel">Escolha a categoria</option>
+                          <option value="1">Residencial</option>
+                          <option value="2">Comercial</option>
+                      </select>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de quartos: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="30" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Valor minimo: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Valor maximo: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Vagas na garagem: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de banheiros: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="range-container">
+                          <label for="roomRange">Quantidade de banheiros: </label>
+                          <div class="range-controls">
+                            <input 
+                              type="range" 
+                              id="roomRange" 
+                              min="0" 
+                              max="1000000" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)" 
+                              onchange="updateValues(this.value)">
+                            
+                            <!-- Input numérico -->
+                            <input 
+                              type="number" 
+                              id="rangeInput" 
+                              min="0" 
+                              max="100" 
+                              step="1" 
+                              value="0" 
+                              oninput="updateValues(this.value)">
+                            
+                            <!-- Exibição do valor -->
+                            <!-- <span id="rangeValue">0</span> -->
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="btn-right" onclick="scrollMenu(200)">&#9654;</button>
+              </div>
+            </div>
+            <div class="principal_content">
+              <div class="principal_content_edificios">
+                <div class="principal_content_edificios_header">
+                  <div class="principal_content_edificios_qtd">
+                    <h2>Resultado encontrados: 100 Imoveis</h2>
+                    <p>Para alugar em Fantasia, Fantasiosa.</p>
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="1">Mais Novos</option>
+                    <option value="2">Mais Relevantes </option>
+                    <option value="3">Mais Próximos</option>
+                  </select>
+                </div>
+                <div class="principal_content_edificios_cards">
+                  <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample1" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i>
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample2" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i>
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample3" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i>
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample4" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i>
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample5" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i>
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                    <div class="main_content_2_cards_card_img">
+                        <div id="carouselExample6" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main_content_2_cards_card_description">
+                        <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                        <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                    </div>
+                    <div class="main_content_2_cards_card_itens">
+                        <i class="bi bi-house"> 200 m²</i>
+                        <i class="fa-solid fa-bed"> 4</i> 
+                        <i class="fa-solid fa-bath"> 2</i> 
+                        <i class="fa-solid fa-car"> 1</i> 
+                    </div>
+                    <div class="main_content_2_cards_card_value">
+                        <p class="main_content_2_cards_card_value_price">300.000</p>
+                    </div>
+                </article>
+                <article class="main_content_2_cards_card">
+                  <div class="main_content_2_cards_card_img">
+                      <div id="carouselExample7" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+                  <div class="main_content_2_cards_card_description">
+                      <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                      <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                  </div>
+                  <div class="main_content_2_cards_card_itens">
+                      <i class="bi bi-house"> 200 m²</i>
+                      <i class="fa-solid fa-bed"> 4</i> 
+                      <i class="fa-solid fa-bath"> 2</i> 
+                      <i class="fa-solid fa-car"> 1</i> 
+                  </div>
+                  <div class="main_content_2_cards_card_value">
+                      <p class="main_content_2_cards_card_value_price">300.000</p>
+                  </div>
+              </article>
+              <article class="main_content_2_cards_card">
+                <div class="main_content_2_cards_card_img">
+                    <div id="carouselExample8" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample8" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="main_content_2_cards_card_description">
+                    <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                    <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+                </div>
+                <div class="main_content_2_cards_card_itens">
+                    <i class="bi bi-house"> 200 m²</i>
+                    <i class="fa-solid fa-bed"> 4</i> 
+                    <i class="fa-solid fa-bath"> 2</i> 
+                    <i class="fa-solid fa-car"> 1</i> 
+                </div>
+                <div class="main_content_2_cards_card_value">
+                    <p class="main_content_2_cards_card_value_price">300.000</p>
+                </div>
+            </article>
+            <article class="main_content_2_cards_card">
+              <div class="main_content_2_cards_card_img">
+                  <div id="carouselExample9" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="imagens/casa_1_1" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="imagens/casa_1_2.webp"d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="imagens/casa_1_3.webp"d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="main_content_2_cards_card_description">
+                  <h3 class="main_content_2_cards_card_description_rua">Rua fantasia.</h3>
+                  <h3 class="main_content_2_cards_card_description_bairro_cidade">Fantasia, Fantasia City.</h3>
+              </div>
+              <div class="main_content_2_cards_card_itens">
+                  <i class="bi bi-house"> 200 m²</i>
+                  <i class="fa-solid fa-bed"> 4</i> 
+                  <i class="fa-solid fa-bath"> 2</i> 
+                  <i class="fa-solid fa-car"> 1</i> 
+              </div>
+              <div class="main_content_2_cards_card_value">
+                  <p class="main_content_2_cards_card_value_price">300.000</p>
+              </div>
+          </article>
+                </div>
+              </div>
+              <div class="principal_content_mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1733311273963!6m8!1m7!1sdhK0sbk7X5dnO4PSd37cKg!2m2!1d37.49893487190219!2d126.9127494454734!3f340.45321218294094!4f-2.8676617109214675!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/602ad8ef08.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function scrollMenu(amount) {
+            const menu = document.querySelector('.menu');
+            
+            // Ajusta o scroll horizontal do menu
+            menu.scrollBy({
+                left: amount,
+                behavior: 'smooth' // Faz a rolagem ser suave
+            });
+        }
+        function updateValues(value) {
+            const range = document.getElementById("roomRange");
+            const numberInput = document.getElementById("rangeInput");
+            const rangeValueDisplay = document.getElementById("rangeValue");
+
+            // Atualiza ambos os inputs e o valor exibido
+            range.value = value;
+            numberInput.value = value;
+            rangeValueDisplay.textContent = value;
+        }
+    </script>
+</body>
+</html>
