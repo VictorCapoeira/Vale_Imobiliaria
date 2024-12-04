@@ -227,6 +227,8 @@
   gap: 2rem;
   margin-top: 2rem;
   padding-left: 2rem;
+  overflow-y: scroll;
+  
 }
 .main_content_2_cards_card{
   flex-basis: calc(33% - 2rem);
