@@ -210,4 +210,5 @@
 .principal_content_edificios_header{
   display: flex;
   justify-content: space-between;
+  padding-left: 2rem;
 }
