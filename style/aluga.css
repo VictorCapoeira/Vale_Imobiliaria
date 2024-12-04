@@ -227,9 +227,10 @@
   gap: 2rem;
   margin-top: 2rem;
   padding-left: 2rem;
+  background-color: #ddd;
 }
-.principal_content_cards_card{
-  flex-basis: calc(33% - 1rem);
+.main_content_2_cards_card{
+  flex-basis: calc(33% - 2rem);
 }
 iframe{
   width: 900px;
