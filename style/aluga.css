@@ -219,3 +219,8 @@
 .form-select{
   width: 20rem;
 }
+.principal_content_edificios_cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
