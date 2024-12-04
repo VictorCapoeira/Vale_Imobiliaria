@@ -231,3 +231,7 @@
 .principal_content_cards_card{
   flex-basis: calc(33% - 1rem);
 }
+iframe{
+  width: 900px;
+  height: 100vh;
+}
