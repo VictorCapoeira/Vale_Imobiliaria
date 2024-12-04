@@ -226,6 +226,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
+  padding-left: 2rem;
 }
 .principal_content_cards_card{
   flex-basis: calc(33% - 1rem);
