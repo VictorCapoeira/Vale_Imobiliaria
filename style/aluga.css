@@ -207,6 +207,10 @@
   /* width: 40px; */
   /* font-size: 2rem; */
 }
+.principal_content{
+  display: flex;
+  gap: 2rem;
+}
 .principal_content_edificios_header{
   display: flex;
   justify-content: space-between;
