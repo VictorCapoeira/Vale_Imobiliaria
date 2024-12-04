@@ -219,6 +219,7 @@
 .form-select{
   width: 20rem;
   outline: 1px solid rgba(0, 0, 0, 0.068);
+  height: 3rem;
 }
 .principal_content_edificios_cards{
   display: flex;
