@@ -20,3 +20,8 @@
     background-color: #000;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.nav_menu{
+    position: absolute;
+    top: 6rem;
+    right: 0;
+}
