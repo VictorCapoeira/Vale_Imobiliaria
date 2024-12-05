@@ -1,61 +1,77 @@
-.hero{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    background-color: aqua;
-}
-.menu_hamburger{
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* Botão Hamburger */
+  .menu-hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 3rem;
-    height: 2.5rem;
+    width: 30px;
+    height: 25px;
     cursor: pointer;
-    & span{
-        display: block;
-        width: 100%;
-        height: .3rem;
-        background-color: #000;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-}
-
-.nav_menu{
+  }
+  
+  .menu-hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Menu */
+  .nav-menu {
     position: absolute;
-    top: 6rem;
+    top: 60px;
     right: 0;
-    background-color: blueviolet;
-    width: 20rem;
+    background-color: #007BFF;
+    color: white;
+    width: 200px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    & .nav_menu_list{
-        list-style: none;
-        margin: none;
-        padding: none;
-    }
-    & .nav_menu_list_item{
-        border-bottom: 1px solid burlywood;
-    }
-    & .nav_menu_list_item_link{
-        display: block;
-        padding: 1.5rem;
-        color: coral;
-        text-decoration: none;
-    }
-    & .nav_menu_list_item_link:hover{
-        background-color: yellowgreen;
-    }
-}
-.nav_menu.active{
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-menu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Menu ativo */
+  .nav-menu.active {
     transform: translateX(0);
-    & span:nth-child(1){
-        transform: rotate(45deg) translate(.5rem, .5rem);
-    }
-    & span:nth-child(2){
-        opacity: 0;
-    }
-    & span:nth-child(3){
-        transform: rotate(-45deg) translate(.5rem, -.5rem);
-    }
-}
+  }
+  
+  /* Transformações do botão quando ativo */
+  .menu-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
