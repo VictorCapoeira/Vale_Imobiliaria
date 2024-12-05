@@ -24,4 +24,7 @@
     position: absolute;
     top: 6rem;
     right: 0;
+    background-color: blueviolet;
+    width: 20rem;
+    transform: translateX(100%);
 }
