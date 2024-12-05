@@ -9,3 +9,9 @@
 .navbar-brand img{
     width: 5rem;
 }
+.navbar-nav{
+    font-size: 2rem;
+}
+.dropdown-toggle::after{
+    display: none;
+}
