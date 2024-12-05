@@ -5,3 +5,9 @@
     padding: 1.5rem;
     background-color: aqua;
 }
+.menu_hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
