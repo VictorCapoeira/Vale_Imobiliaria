@@ -34,5 +34,7 @@
         margin: none;
         padding: none;
     }
-    &  
+    & .nav_menu_list_item{
+        border-bottom: 1px solid burlywood;
+    }
 }
