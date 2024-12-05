@@ -1,9 +1,41 @@
 html{
     font-size: 62.5%;
-}
-body{
+} 
+body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     min-width: 100vw;
-}
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Tema claro (padrão) */
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Tema escuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode button {
+    background-color: #444444;
+    color: #ffffff;
+  }
