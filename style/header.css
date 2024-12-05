@@ -43,4 +43,11 @@
         color: coral;
         text-decoration: none;
     }
+    & .nav_menu_list_item_link:hover{
+        background-color: yellowgreen;
+    }
+}
+.nav_menu.active{
+    transform: translateX(0);
+    
 }
