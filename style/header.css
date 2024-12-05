@@ -55,4 +55,7 @@
     & span:nth-child(2){
         opacity: 0;
     }
+    & span:nth-child(3){
+        transform: rotate(-45deg) translate(.5rem, -.5rem);
+    }
 }
