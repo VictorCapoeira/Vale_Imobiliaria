@@ -23,9 +23,17 @@
     background-color: transparent;
     font-size: 1.6rem;
 }
+.nav-link{
+    color: inherit;
+}
 .dropdown-item{
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    color: inherit;
 }
 .dropdown-menu li:last-child .dropdown-item{
     border: none;
 }
+.hero .navbar{
+    background-color: inherit !important;
+    color: inherit;
+  }

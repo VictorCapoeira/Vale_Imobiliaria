@@ -38,9 +38,3 @@ body {
   body.dark-mode button {
     color: aliceblue;
   }
-  .container-fluid{
-    background-color: transparent;
-  }
-  .hero .navbar{
-    background-color: transparent !important;
-  }
