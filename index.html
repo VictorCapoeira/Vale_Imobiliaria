@@ -57,14 +57,86 @@
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <div class="main_index_switch">
+              <h1 class="main_index_switch_title">Busque um lar nas suas medidas!</h1>
+              <select class="main_index_switch_select" name="main_index_switch_select" id="main_index_switch_select">
+                <option value="alugar">Alugar</option>
+                <option value="comprar">Comprar</option>  
+              </select>
+              <div class="main_index_switch_def">
+                <label for="cidade" class="main_index_switch_title">Cidade</label>
+                <input type="text" class="main_index_switch_content" name="cidade" id="cidade" placeholder="Busque por cidade">
+              </div>
+              <div class="main_index_switch_def">
+                <label for="bairro" class="main_index_switch_title">Bairro</label>
+                <input type="text" class="main_index_switch_content" name="bairro" id="bairro" placeholder="Busque por bairro">
+              </div>
+              <div class="main_index_switch_def main_index_switch_custom">
+                <select class="form-select main_index_switch_custom_select" aria-label="Default select example">
+                  <option selected>Valor até:</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="1500">1500</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">+2000</option>
+                </select>
+              </div>
+              <div class="main_index_switch_def main_index_switch_custom">
+                <select class="form-select main_index_switch_custom_select" aria-label="Default select example">
+                  <option selected>Quartos:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">+4</option>
+                </select>
+              </div>
+              <div class="main_index_switch_button">
+                <button>Buscar imóveis</button>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-item main_index_switch">
+            <div class="main_index_switch">
+              <h1 class="main_index_switch_title">Publique seu imóvel e deixa a pessoa certa chamar você!</h1>
+              <select class="main_index_switch_select" name="main_index_switch_select" id="main_index_switch_select">
+                <option value="alugar">Alugar</option>
+                <option value="comprar">Comprar</option>  
+              </select>
+              <div class="main_index_switch_def">
+                <label for="cidade" class="main_index_switch_title">Cidade</label>
+                <input type="text" class="main_index_switch_content" name="cidade" id="cidade" placeholder="Busque por cidade">
+              </div>
+              <div class="main_index_switch_def">
+                <label for="bairro" class="main_index_switch_title">Bairro</label>
+                <input type="text" class="main_index_switch_content" name="bairro" id="bairro" placeholder="Busque por bairro">
+              </div>
+              <div class="main_index_switch_def main_index_switch_custom">
+                <select class="form-select main_index_switch_custom_select" aria-label="Default select example">
+                  <option selected>Valor até:</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="1500">1500</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">+2000</option>
+                </select>
+              </div>
+              <div class="main_index_switch_def main_index_switch_custom">
+                <select class="form-select main_index_switch_custom_select" aria-label="Default select example">
+                  <option selected>Quartos:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">+4</option>
+                </select>
+              </div>
+              <div class="main_index_switch_button">
+                <button>Continuar publicação</button>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

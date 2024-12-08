@@ -38,3 +38,6 @@ body {
   body.dark-mode button {
     color: aliceblue;
   }
+.main_content{
+  margin-top: 2rem;
+}
