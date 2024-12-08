@@ -47,4 +47,8 @@ body {
   margin-right: auto;
   border: 1px solid #00000042;
   padding: 1rem;
+} 
+.main_index_switch_title{
+  text-transform: uppercase;
+  line-height: 1.5;
 }
