@@ -37,3 +37,12 @@
     background-color: inherit !important;
     color: inherit;
   }
+body.dark-mode{
+    & .nav-item, .hero{
+        border-bottom-color: rgba(240, 248, 255, 0.247);
+    }
+    & .dropdown-item{
+        color: aliceblue;
+        border-bottom-color: rgba(240, 248, 255, 0.247);
+    }
+}
