@@ -29,15 +29,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
   }
   
-  /* Tema escuro */
-  body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  
-  body.dark-mode button {
-    color: aliceblue;
-  }
 .main_content{
   margin-top: 2rem;
 }
@@ -84,4 +75,12 @@ body {
   width: 20rem;
   background-color: aqua;
 
+}
+/* Tema escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  & .main_index_switch{
+    border-color: rgba(255, 255, 255, 0.384);
+  }
 }
