@@ -58,3 +58,6 @@ body {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+.main_index_switch_def input{
+  margin-bottom: 1rem;
+}
