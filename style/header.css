@@ -1,5 +1,6 @@
 .hero{
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    background-color: aqua;
 }
 #theme-toggle{
     margin-left: auto;
@@ -24,20 +25,20 @@
     font-size: 1.6rem;
 }
 .nav-link{
-    color: inherit;
+    color: black;
 }
 .dropdown-item{
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
-    color: inherit;
+    color: black;
 }
 .dropdown-menu li:last-child .dropdown-item{
     border: none;
 }
 .hero .navbar{
     background-color: inherit !important;
-    color: inherit;
+    color: black;
   }
-body.dark-mode{
+/* body.dark-mode{
     & .nav-item, .hero{
         border-bottom-color: rgba(240, 248, 255, 0.247);
     }
@@ -45,4 +46,4 @@ body.dark-mode{
         color: aliceblue;
         border-bottom-color: rgba(240, 248, 255, 0.247);
     }
-}
+} */
