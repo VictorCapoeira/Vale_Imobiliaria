@@ -76,6 +76,13 @@ body {
   background-color: aqua;
 
 }
+.carousel-control-next{
+  right: -10px;
+}
+.carousel-control-prev{
+  left: -10px;
+}
+
 /* Tema escuro */
 body.dark-mode {
   background-color: #121212;
