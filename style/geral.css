@@ -58,8 +58,14 @@ body {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+.main_index_switch_def{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 .main_index_switch_def input{
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   padding-left: .5rem;
   width: 100%;
 }
