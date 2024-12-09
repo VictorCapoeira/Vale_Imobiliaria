@@ -82,7 +82,10 @@ body {
 .carousel-control-prev{
   left: -10px;
 }
-
+.def_seta{
+  color: black;
+  font-size: 2rem;
+}
 /* Tema escuro */
 body.dark-mode {
   background-color: #121212;
