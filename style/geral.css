@@ -60,4 +60,5 @@ body {
 }
 .main_index_switch_def input{
   margin-bottom: 1rem;
+  padding-left: .5rem;
 }
