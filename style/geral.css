@@ -63,6 +63,7 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .main_index_switch_def input{
   /* margin-bottom: 1rem; */
