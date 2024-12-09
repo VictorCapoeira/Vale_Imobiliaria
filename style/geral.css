@@ -74,3 +74,13 @@ body {
   padding: 1rem;
   font-size: 1.6rem;
 }
+.main_index_switch_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_index_switch_button button{
+  /* width: 100%; */
+  background-color: aqua;
+
+}
