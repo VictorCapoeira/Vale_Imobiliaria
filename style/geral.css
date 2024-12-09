@@ -81,6 +81,7 @@ body {
 }
 .main_index_switch_button button{
   /* width: 100%; */
+  width: 20rem;
   background-color: aqua;
 
 }
