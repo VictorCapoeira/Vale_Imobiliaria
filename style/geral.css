@@ -93,4 +93,7 @@ body.dark-mode {
   & .main_index_switch{
     border-color: rgba(255, 255, 255, 0.384);
   }
+  & .def_seta{
+    color: white;
+  }
 }
