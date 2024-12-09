@@ -70,3 +70,7 @@ body {
   padding-left: .5rem;
   width: 100%;
 }
+.main_index_switch_custom select{
+  padding: 1rem;
+  font-size: 1.6rem;
+}
