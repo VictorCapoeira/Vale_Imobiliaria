@@ -136,7 +136,10 @@ body {
     align-items: center;
   }
   & .section_def_cards_card_icons i{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    opacity: .5;
   }
 }
 
