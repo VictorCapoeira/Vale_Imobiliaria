@@ -91,6 +91,11 @@ body {
   margin-top: 2rem;
   text-align: center;
 }
+.section_def_index_cards{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Tema escuro */
 body.dark-mode {
   background-color: #121212;
