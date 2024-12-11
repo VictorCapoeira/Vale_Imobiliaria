@@ -132,7 +132,7 @@ body {
   }
   & .section_def_cards_card_icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
