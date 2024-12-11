@@ -109,6 +109,7 @@ body {
     text-decoration: none;
     color: inherit;
     padding-left: 1rem;
+    padding-top: 1rem;
   }
   & .section_cards_card_img img{
     width: 50rem;
