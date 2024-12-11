@@ -112,6 +112,7 @@ body {
     padding-top: 1rem;
     /* background-color: aqua; */
     width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.438);
   }
   & .section_cards_card_img img{
     width: 50rem;
