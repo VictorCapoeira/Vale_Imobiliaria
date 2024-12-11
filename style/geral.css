@@ -146,6 +146,9 @@ body {
     color: rgb(12, 153, 158);
     font-size: 2rem;
   }
+  & .section_def_cards_card_price::before{
+    content: 'R$';
+  }
 }
 
 /* Tema escuro */
