@@ -95,6 +95,10 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  & .section_def_index_cards_card{
+    border-radius: 15px;
+    overflow: hidden;
+  }
   & .section_def_index_cards_card a{
     text-decoration: none;
     color: inherit;
