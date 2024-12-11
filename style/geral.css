@@ -86,6 +86,9 @@ body {
   color: black;
   font-size: 2rem;
 }
+.section_01_index_title{
+  text-transform: uppercase;
+}
 /* Tema escuro */
 body.dark-mode {
   background-color: #121212;
