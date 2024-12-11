@@ -123,6 +123,9 @@ body {
   & .section_def_cards_card_title{
     text-align: center;
   }
+  & .section_def_cards_card_subtitle{
+    font-size: 1.5rem;
+  }
 }
 
 /* Tema escuro */
