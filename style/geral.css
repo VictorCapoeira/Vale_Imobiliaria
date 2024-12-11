@@ -95,10 +95,14 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   & .section_def_index_cards_card{
     border-radius: 15px;
     overflow: hidden;
     outline: 1px solid rgba(0, 0, 0, 0.281);
+    
   }
   & .section_def_index_cards_card a{
     text-decoration: none;
