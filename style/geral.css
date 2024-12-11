@@ -99,6 +99,12 @@ body {
     text-decoration: none;
     color: inherit;
   }
+  & .section_cards_card_img img{
+    width: 50rem;
+    max-width: 50rem;
+    height: 25rem;
+    max-height: 25rem;
+  }
 }
 
 /* Tema escuro */
