@@ -110,12 +110,17 @@ body {
     color: inherit;
     padding-left: 1rem;
     padding-top: 1rem;
+    /* background-color: aqua; */
+    width: 100%;
   }
   & .section_cards_card_img img{
     width: 50rem;
     max-width: 50rem;
     height: 15rem;
     max-height: 15rem;
+  }
+  & .section_def_cards_card_title{
+    text-align: center;
   }
 }
 
