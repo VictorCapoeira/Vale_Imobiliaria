@@ -129,6 +129,10 @@ body {
     margin-top: 0;
     opacity: .5;
   }
+  & .section_def_cards_card_icons{
+    display: flex;
+    
+  }
 }
 
 /* Tema escuro */
