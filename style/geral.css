@@ -88,6 +88,8 @@ body {
 }
 .section_01_index_title{
   text-transform: uppercase;
+  margin-top: 2rem;
+  
 }
 /* Tema escuro */
 body.dark-mode {
