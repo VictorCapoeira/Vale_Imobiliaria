@@ -99,7 +99,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   & .section_def_index_cards_card{
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     outline: 1px solid rgba(0, 0, 0, 0.281);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
@@ -145,6 +145,9 @@ body {
     text-align: center;
     color: rgb(12, 153, 158);
     font-size: 2rem;
+    margin-top: .5rem;
+
+
   }
   & .section_def_cards_card_price::before{
     content: 'R$';
@@ -160,5 +163,12 @@ body.dark-mode {
   }
   & .def_seta{
     color: white;
+  }
+  & .section_def_index_cards_card{
+    outline: 1px solid rgba(255, 253, 253, 0.281);
+    box-shadow: 2px 2px 2px rgba(248, 248, 248, 0.24);
+  }
+  & .section_def_index_cards_card a{
+    border-top: 1px solid rgba(255, 255, 255, 0.438);
   }
 }
