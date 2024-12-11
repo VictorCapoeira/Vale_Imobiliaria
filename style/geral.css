@@ -135,6 +135,9 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+  & .section_def_cards_card_icons i{
+    font-size: 2rem;
+  }
 }
 
 /* Tema escuro */
