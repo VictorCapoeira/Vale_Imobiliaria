@@ -92,7 +92,7 @@ body {
   text-align: center;
 }
 .section_def_index_cards{
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -118,19 +118,20 @@ body {
   & .section_cards_card_img img{
     width: 50rem;
     max-width: 50rem;
-    height: 15rem;
-    max-height: 15rem;
+    height: 20rem;
+    max-height: 20rem;
   }
   & .section_def_cards_card_title{
-    text-align: center;
     margin-bottom: 0;
   }
   & .section_def_cards_card_subtitle{
     font-size: 1.5rem;
     margin-top: 0;
+    margin-bottom: 3rem;
     opacity: .5;
   }
   & .section_def_cards_card_icons{
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
